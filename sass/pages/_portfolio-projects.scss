@@ -1,0 +1,100 @@
+.filters-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.filters-wrapper__item:not(:last-child) {
+  margin-right: 8px;
+}
+.filters-wrapper__btn {
+  padding: 6px 22px;
+  color: var(--add-textcolor);
+  background-color: #f5f4fa;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: var(--main-font-size);
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: color 250ms var(--timing-fun),
+    background-color 250ms var(--timing-fun), box-shadow 250ms var(--timing-fun);
+  &:active {
+      color: #ffffff;
+      background-color: var(--akcent-color);
+    }
+  &:hover,
+  &:focus {
+  color: #ffffff;
+  background-color: var(--akcent-color);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+}
+.wrapper-projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrapper-projects__item {
+  flex-basis: calc((100% - 90px) / 3);
+  margin-right: var(--margin-right-item);
+  transition: box-shadow 250ms var(--timing-fun);
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+  /* .item-project:not(:nth-child(3n)) {
+    margin-right: var(--margin-right-item);
+  } */
+  &:not(:nth-last-child(-n + 3)) {
+    margin-bottom: var(--margin-right-item);
+  }
+}
+.box {
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding: 63px 24px;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform 250ms ease;
+  font-size: 18px;
+  line-height: 1.56;
+  color: #ffffff;
+  .wrapper-projects__link:hover &,
+  .wrapper-projects__link:focus & {
+  transform: translateY(0);
+}
+}
+.dec-project {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top-color: transparent;
+}
+.dec-project__title {
+  margin-bottom: 4px;
+  color: var(--add-textcolor);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  transition: color 250ms var(--timing-fun);
+  &:hover {
+    color: var(--akcent-color);
+  }
+}
+.dec-project__filter-item {
+  color: var(--main-textcolor);
+  font-size: var(--main-font-size);
+  line-height: 1.87;
+}
