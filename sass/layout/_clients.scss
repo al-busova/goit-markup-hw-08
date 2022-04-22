@@ -3,10 +3,8 @@
   flex-wrap: wrap;
 }
 .clients__thumb {
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  flex-basis: calc((100% - 30px) / 2);
+  @media screen and (max-width:767px) {
+    flex-basis: calc((100% - 30px) / 2);
   margin-right: var(--margin-right-item);
   &:nth-child(2n) {
     margin-right: 0;
@@ -14,9 +12,16 @@
   &:not(:nth-last-child(-n + 2)) {
     margin-bottom: var(--margin-right-item);
   }
-  // &:not(:last-child) {
-  //   margin-right: var(--margin-right-item);
-  // }
+  }
+  @media screen and (min-width:768px) {
+    flex-basis: calc((100% - 60px) / 3);
+  &:not(:nth-child(3n)) {
+    margin-right: var(--margin-right-item); 
+    }
+  &:not(:nth-last-child(-n + 3)) {
+      margin-bottom: var(--margin-right-item);
+    }
+  }
 }
 .clients__thumb .link {
   display: flex;

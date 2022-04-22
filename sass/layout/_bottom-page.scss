@@ -2,18 +2,33 @@
   background-color: var(--main-bgcolor);
   padding-top: 60px;
   padding-bottom: 60px;
+@media  screen and (min-width:768px)  {
+   
+  }
 }
 .bottom-page .container {
-  // display: flex;
+  @media  screen and (min-width:768px) {
+   display: flex;
+   flex-wrap: wrap;
+    padding-left: 76px;
+    padding-right: 90px;
+  }
+}
+// @media  screen and (min-width:768px) {
+//   .left-side-footer {
+//      margin-right: 164px;
+//   }
  
+// }
+.left-side-footer, .soc-links-footer {
+ margin-bottom: 60px;
 }
 
-.left-side-footer {
- 
-  // margin-right: 70px;
-}
 .geoloc-contacts__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+  @media  screen and (min-width:1200px) {
+    margin-bottom: 9px;
+  }
 }
 .geoloc-contacts__link {
   display: block;
@@ -39,16 +54,17 @@
   color: #ffffff;
 }
 .form-footer {
-  margin-top: 12px;
+  text-align: center;
 }
 .form-footer__subscribe {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   margin-top: 20px;
 }
 .form-footer__input {
-  width: 360px;
-  margin-right: 12px;
+  width: 450px;
+  margin-bottom: 20px;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -60,6 +76,10 @@
   &:focus {
   outline: none;
   border-color: var(--akcent-color);
+  @media  screen and (min-width:768px) {
+    width: 360px;
+  margin-right: 12px;
+  }
 }
 }
 .btn_subscribe {

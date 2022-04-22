@@ -30,5 +30,6 @@ body {
     text-decoration: none;
   }
 section {
+  padding-top: var(--padding-section) ;
   padding-bottom: var(--padding-section);
 }
