@@ -76,7 +76,10 @@
   }
 }
 .form-footer__input {
-  width: 450px;
+   @media  screen and  (max-width:479px)   {
+     min-width: 320px;
+  }
+
   padding: 15px 16px;
   margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -85,8 +88,8 @@
   background-color: var(--main-bgcolor);
   color: #ffffff;
   transition: border-color 250ms var(--timing-fun);
-  @media  screen and (max-width:1199px) {
- 
+  @media  screen and (min-width:480px) {
+  width: 450px;
   }
   @media  screen and (min-width:1200px) {
     width: 360px;

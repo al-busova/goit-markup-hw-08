@@ -126,8 +126,6 @@ section {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 450px;
-  height: 610px;
   background-color: #ffffff;
   transform: scale(1) translate(-50%, -50%);
   transition: background-color 250ms var(--timing-fun), transform 250ms var(--timing-fun);
@@ -135,8 +133,14 @@ section {
 
 @media screen and (max-width: 479px) {
   .modal {
-    max-width: 450px;
-    max-height: 610px;
+    min-width: 320px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 610px;
   }
 }
 
@@ -939,7 +943,7 @@ section {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .clients__thumb {
     flex-basis: calc((100% - 60px) / 3);
   }
@@ -1083,7 +1087,6 @@ section {
 }
 
 .form-footer__input {
-  width: 450px;
   padding: 15px 16px;
   margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1092,6 +1095,18 @@ section {
   background-color: var(--main-bgcolor);
   color: #ffffff;
   transition: border-color 250ms var(--timing-fun);
+}
+
+@media screen and (max-width: 479px) {
+  .form-footer__input {
+    min-width: 320px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .form-footer__input {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
