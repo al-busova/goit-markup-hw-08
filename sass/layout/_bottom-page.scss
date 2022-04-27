@@ -2,28 +2,34 @@
   background-color: var(--main-bgcolor);
   padding-top: 60px;
   padding-bottom: 60px;
-@media  screen and (min-width:768px)  {
-   
-  }
 }
 .bottom-page .container {
   @media  screen and (min-width:768px) {
    display: flex;
    flex-wrap: wrap;
-    padding-left: 76px;
-    padding-right: 90px;
+   justify-content: center;
+    // padding-left: 76px;
+    // padding-right: 90px;
   }
+  @media  screen and (min-width:1200px) {
+    flex-wrap: nowrap;
+     justify-content: space-between;
+  } 
 }
-// @media  screen and (min-width:768px) {
-//   .left-side-footer {
-//      margin-right: 164px;
-//   }
- 
-// }
-.left-side-footer, .soc-links-footer {
+@media  screen and (max-width:1199px) {
+ .left-side-footer, .soc-links-footer {
  margin-bottom: 60px;
-}
+} 
 
+}
+.left-side-footer {
+  @media  screen and (min-width:768px) {
+  margin-right: 165px;
+}
+ @media  screen and (min-width:1200px) {
+    margin-right: 0;
+ }
+}
 .geoloc-contacts__item:not(:last-child) {
   margin-bottom: 8px;
   @media  screen and (min-width:1200px) {
@@ -38,7 +44,10 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  transition: color 250ms var(--timing-fun);
+  transition: color 250ms var(--timing-fun); 
+  @media  screen and (min-width:1200px) {
+  text-align: left;
+  } 
   &:hover,
   &:focus {
   color: var(--akcent-color);
@@ -47,6 +56,7 @@
 .geoloc-contacts__link_map {
   color: #ffffff;
 }
+
 .appeal-footer {
   font-size: 14px;
   line-height: 1.14;
@@ -54,37 +64,46 @@
   color: #ffffff;
 }
 .form-footer {
-  text-align: center;
+ @media  screen and (max-width:1199px) {
+   text-align: center; 
+ } 
+ 
 }
 .form-footer__subscribe {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
   margin-top: 20px;
+  @media  screen and (min-width:1200px) {
+    display: flex;
+  }
 }
 .form-footer__input {
   width: 450px;
-  margin-bottom: 20px;
   padding: 15px 16px;
+  margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   box-sizing: border-box;
   background-color: var(--main-bgcolor);
   color: #ffffff;
   transition: border-color 250ms var(--timing-fun);
+  @media  screen and (max-width:1199px) {
+ 
+  }
+  @media  screen and (min-width:1200px) {
+    width: 360px;
+  margin-right: 12px;
+  margin-bottom: 0;
+  }
   &:hover,
   &:focus {
   outline: none;
   border-color: var(--akcent-color);
-  @media  screen and (min-width:768px) {
-    width: 360px;
-  margin-right: 12px;
-  }
+  
 }
 }
 .btn_subscribe {
   display: flex;
   align-items: center;
+  margin: 0 auto;
 }
 .icon-send {
   margin-left: 10px;

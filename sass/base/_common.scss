@@ -35,3 +35,15 @@ section {
   padding-top: var(--padding-section) ;
   padding-bottom: var(--padding-section);
 }
+@media screen and (min-width:1200px) {
+  .peculiarities,
+.workers,
+.portfolio,
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.work {
+  padding: 0;
+}
+}

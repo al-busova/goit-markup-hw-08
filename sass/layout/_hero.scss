@@ -24,7 +24,7 @@
     url(/images/img-main-page/bg-hero-mob@2x.jpg);
   }
 }
-@media screen and (min-width:700px) {
+@media screen and (min-width:768px) {
   .hero {
     background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -43,8 +43,10 @@
     url(/images/img-main-page/bg-hero-tabl@2x.jpg);
   }
 }
-@media screen and (min-width:1100px) {
+@media screen and (min-width:1200px) {
   .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)

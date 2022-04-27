@@ -32,11 +32,18 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: auto;
-  margin-right: 10px;
   margin-top: 12px;
   max-width: 206px;
   height: 80px;
+  @media screen and (min-width:1200px) {
+     justify-content: space-between;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .soc-links-footer {
+   margin:0 auto;
+}
 }
 .soc-links-footer .soc-links__item .link {
   background: rgba(255, 255, 255, 0.1);

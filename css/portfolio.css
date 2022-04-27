@@ -68,6 +68,19 @@ section {
   padding-bottom: var(--padding-section);
 }
 
+@media screen and (min-width: 1200px) {
+  .peculiarities,
+  .workers,
+  .portfolio,
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .work {
+    padding: 0;
+  }
+}
+
 .container {
   margin: 0 auto;
   padding-left: 15px;
@@ -129,6 +142,12 @@ section {
   color: #ffffff;
 }
 
+@media screen and (min-width: 1200px) {
+  .bottom-page__logo {
+    text-align: left;
+  }
+}
+
 .soc-links {
   display: flex;
   justify-content: center;
@@ -168,11 +187,21 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: auto;
-  margin-right: 10px;
   margin-top: 12px;
   max-width: 206px;
   height: 80px;
+}
+
+@media screen and (min-width: 1200px) {
+  .soc-links-footer {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .soc-links-footer {
+    margin: 0 auto;
+  }
 }
 
 .soc-links-footer .soc-links__item .link {
@@ -374,10 +403,10 @@ section {
   }
   .navigation__wrapper {
     display: flex;
-    margin-right: 84px;
   }
   .contacts {
     flex-direction: column;
+    margin-left: 84px;
   }
   .contacts__item .link {
     display: flex;
@@ -400,8 +429,7 @@ section {
     display: block;
     padding: 32px 0;
   }
-  .navigation__link,
-  .contacts .link {
+  .navigation__link {
     font-size: 14px;
     line-height: 1.143;
   }
@@ -418,13 +446,10 @@ section {
   }
 }
 
-@media screen and (min-width: 1200) {
+@media screen and (min-width: 1200px) {
   .contacts {
     flex-direction: row;
-  }
-  .contacts__item:not(:last-child) {
-    margin-right: var(--margin-right-nav);
-    margin-bottom: 10px;
+    margin-left: 305px;
   }
   .contacts__item .link {
     padding-top: 32px;
@@ -435,6 +460,9 @@ section {
   .contacts__envelope,
   .contacts__smartphone {
     margin-right: 10px;
+  }
+  .contacts__item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -563,13 +591,33 @@ section {
   .bottom-page .container {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 76px;
-    padding-right: 90px;
+    justify-content: center;
   }
 }
 
-.left-side-footer, .soc-links-footer {
-  margin-bottom: 60px;
+@media screen and (min-width: 1200px) {
+  .bottom-page .container {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .left-side-footer, .soc-links-footer {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .left-side-footer {
+    margin-right: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .left-side-footer {
+    margin-right: 0;
+  }
 }
 
 .geoloc-contacts__item:not(:last-child) {
@@ -593,6 +641,12 @@ section {
   transition: color 250ms var(--timing-fun);
 }
 
+@media screen and (min-width: 1200px) {
+  .geoloc-contacts__link {
+    text-align: left;
+  }
+}
+
 .geoloc-contacts__link:hover, .geoloc-contacts__link:focus {
   color: var(--akcent-color);
 }
@@ -608,21 +662,26 @@ section {
   color: #ffffff;
 }
 
-.form-footer {
-  text-align: center;
+@media screen and (max-width: 1199px) {
+  .form-footer {
+    text-align: center;
+  }
 }
 
 .form-footer__subscribe {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
   margin-top: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-footer__subscribe {
+    display: flex;
+  }
 }
 
 .form-footer__input {
   width: 450px;
-  margin-bottom: 20px;
   padding: 15px 16px;
+  margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   box-sizing: border-box;
@@ -631,21 +690,23 @@ section {
   transition: border-color 250ms var(--timing-fun);
 }
 
+@media screen and (min-width: 1200px) {
+  .form-footer__input {
+    width: 360px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
+}
+
 .form-footer__input:hover, .form-footer__input:focus {
   outline: none;
   border-color: var(--akcent-color);
 }
 
-@media screen and (min-width: 768px) {
-  .form-footer__input:hover, .form-footer__input:focus {
-    width: 360px;
-    margin-right: 12px;
-  }
-}
-
 .btn_subscribe {
   display: flex;
   align-items: center;
+  margin: 0 auto;
 }
 
 .icon-send {
