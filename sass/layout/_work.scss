@@ -2,13 +2,12 @@
   padding-bottom: var(--padding-section);
   @media screen and (max-width:1199px) {
     display: none;
-    }
+  }
 }
 .work__wrapper {
   display: flex;
   flex-wrap: wrap;
   /* gap: 30px; 2 var*/
-  /* margin-right: -1 * (var(--margin-right-item)); 1 var*/
 }
 .work__item {
   position: relative;
@@ -16,9 +15,6 @@
     margin-right: 30px;
   }
 }
-/* .work-item {
-  margin-right: var(--margin-right-item) 1 var;
-} */
 .work__wrapper-title {
   position: absolute;
   bottom: 0;

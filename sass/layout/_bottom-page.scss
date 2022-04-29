@@ -8,27 +8,24 @@
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
-    // padding-left: 76px;
-    // padding-right: 90px;
   }
   @media  screen and (min-width:1200px) {
     flex-wrap: nowrap;
-     justify-content: space-between;
+    justify-content: space-between;
   } 
 }
 @media  screen and (max-width:1199px) {
  .left-side-footer, .soc-links-footer {
- margin-bottom: 60px;
-} 
-
+    margin-bottom: 60px;
+  } 
 }
 .left-side-footer {
   @media  screen and (min-width:768px) {
-  margin-right: 165px;
-}
- @media  screen and (min-width:1200px) {
+    margin-right: 165px;
+  }
+  @media  screen and (min-width:1200px) {
     margin-right: 0;
- }
+  }
 }
 .geoloc-contacts__item:not(:last-child) {
   margin-bottom: 8px;
@@ -46,17 +43,16 @@
   letter-spacing: 0.03em;
   transition: color 250ms var(--timing-fun); 
   @media  screen and (min-width:1200px) {
-  text-align: left;
+    text-align: left;
   } 
   &:hover,
   &:focus {
-  color: var(--akcent-color);
-}
+    color: var(--akcent-color);
+  }
 }
 .geoloc-contacts__link_map {
   color: #ffffff;
 }
-
 .appeal-footer {
   font-size: 14px;
   line-height: 1.14;
@@ -66,8 +62,7 @@
 .form-footer {
  @media  screen and (max-width:1199px) {
    text-align: center; 
- } 
- 
+  } 
 }
 .form-footer__subscribe {
   margin-top: 20px;
@@ -76,10 +71,6 @@
   }
 }
 .form-footer__input {
-  //  @media  screen and  (max-width:479px)   {
-  //    min-width: 320px;
-  // }
-
   padding: 15px 16px;
   margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -89,19 +80,18 @@
   color: #ffffff;
   transition: border-color 250ms var(--timing-fun);
   @media  screen and (min-width:480px) {
-  width: 450px;
+    width: 450px;
   }
   @media  screen and (min-width:1200px) {
     width: 360px;
-  margin-right: 12px;
-  margin-bottom: 0;
+    margin-right: 12px;
+    margin-bottom: 0;
   }
   &:hover,
   &:focus {
-  outline: none;
-  border-color: var(--akcent-color);
-  
-}
+    outline: none;
+    border-color: var(--akcent-color);
+  }
 }
 .btn_subscribe {
   display: flex;

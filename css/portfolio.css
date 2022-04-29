@@ -407,24 +407,6 @@ section {
   .navigation__wrapper {
     display: flex;
   }
-  .contacts {
-    flex-direction: column;
-    margin-left: 84px;
-  }
-  .contacts__item .link {
-    display: flex;
-    align-items: center;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    font-size: 12px;
-    line-height: 1.17;
-  }
-  .contacts__envelope,
-  .contacts__smartphone {
-    display: block;
-    margin-right: 8px;
-    fill: currentColor;
-  }
   .navigation__item:not(:last-child) {
     margin-right: var(--margin-right-nav);
   }
@@ -446,6 +428,24 @@ section {
     background-color: var(--akcent-color);
     border-radius: 2px;
     border-color: transparent;
+  }
+  .contacts {
+    flex-direction: column;
+    margin-left: 84px;
+  }
+  .contacts__item .link {
+    display: flex;
+    align-items: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  .contacts__envelope,
+  .contacts__smartphone {
+    display: block;
+    margin-right: 8px;
+    fill: currentColor;
   }
 }
 
