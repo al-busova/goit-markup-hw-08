@@ -465,7 +465,6 @@ section {
     width: 100vw;
     height: 100vh;
     overflow: auto;
-    transition: opasity 250ms var(--timing-fun), visibility 250ms var(--timing-fun);
   }
   .container_mobile.is-open {
     display: block;

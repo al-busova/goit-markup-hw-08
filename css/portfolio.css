@@ -259,7 +259,6 @@ section {
     width: 100vw;
     height: 100vh;
     overflow: auto;
-    transition: opasity 250ms var(--timing-fun), visibility 250ms var(--timing-fun);
   }
   .container_mobile.is-open {
     display: block;
@@ -539,6 +538,9 @@ section {
     flex-basis: calc((100% - 30px) / 2);
     margin-right: var(--margin-right-item);
   }
+  .wrapper-projects__item:first-child .dec-project__filter-item {
+    margin-bottom: 36px;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -560,6 +562,9 @@ section {
   }
   .wrapper-projects__item:not(:nth-last-child(-n + 3)) {
     margin-bottom: var(--margin-right-item);
+  }
+  .wrapper-projects__item:first-child .dec-project__filter-item {
+    margin-bottom: 0;
   }
 }
 

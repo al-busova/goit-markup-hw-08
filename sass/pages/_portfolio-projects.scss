@@ -62,6 +62,9 @@
     flex-basis: calc((100% - 30px) / 2);
     margin-right: var(--margin-right-item);
   }
+  .wrapper-projects__item:first-child .dec-project__filter-item {
+    margin-bottom: 36px;
+  }
 }
 
 @media screen and (max-width:1199px) {
@@ -83,6 +86,9 @@
     &:not(:nth-last-child(-n + 3)) {
       margin-bottom: var(--margin-right-item);
     }
+  }
+  .wrapper-projects__item:first-child .dec-project__filter-item {
+    margin-bottom: 0;
   }
 }
 
