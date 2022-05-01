@@ -76,7 +76,8 @@ section {
     padding-bottom: 94px;
   }
   .work {
-    padding: 0;
+    padding-top: 0;
+    padding-bottom: 94px;
   }
 }
 
@@ -132,7 +133,7 @@ section {
 
 @media screen and (max-width: 479px) {
   .modal {
-    min-width: 320px;
+    width: 94vw;
   }
 }
 
@@ -313,14 +314,15 @@ section {
 .title-section {
   margin-bottom: 30px;
   color: var(--add-textcolor);
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .title-section {
     margin-bottom: 50px;
+    font-size: 36px;
   }
 }
 
@@ -463,7 +465,6 @@ section {
     z-index: 500;
     background-color: #ffffff;
     width: 100vw;
-    height: 100vh;
     overflow: auto;
   }
   .container_mobile.is-open {
@@ -482,6 +483,15 @@ section {
 @media screen and (max-width: 767px) and (min-width: 480px) {
   .menu-container {
     width: 480px;
+  }
+}
+
+@media screen and (max-width: 767px) and (max-width: 767px) {
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
   }
 }
 
@@ -540,9 +550,6 @@ section {
 }
 
 @media screen and (max-width: 767px) {
-  .navigation__wrapper {
-    margin-bottom: 302px;
-  }
   .mobile-soc-links {
     display: flex;
   }
@@ -817,10 +824,6 @@ section {
   line-height: 1.7;
 }
 
-.work {
-  padding-bottom: var(--padding-section);
-}
-
 @media screen and (max-width: 1199px) {
   .work {
     display: none;
@@ -880,6 +883,9 @@ section {
   .workers__item {
     margin: 0 auto;
   }
+  .workers__item:not(:last-child) {
+    margin-bottom: var(--margin-right-item);
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -890,10 +896,7 @@ section {
   .workers__item:nth-child(2n) {
     margin-right: 0;
   }
-}
-
-@media screen and (max-width: 1199px) {
-  .workers__item:not(:last-child) {
+  .workers__item:not(:nth-last-child(-n + 2)) {
     margin-bottom: var(--margin-right-item);
   }
 }
@@ -949,7 +952,7 @@ section {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients__thumb {
     flex-basis: calc((100% - 60px) / 3);
   }
@@ -1095,6 +1098,7 @@ section {
 .form-footer__input {
   padding: 15px 16px;
   margin-bottom: 20px;
+  width: 94vw;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   box-sizing: border-box;

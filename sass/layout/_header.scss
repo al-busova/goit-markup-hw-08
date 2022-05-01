@@ -16,11 +16,11 @@
     z-index: 500;
     background-color: #ffffff;
     width: 100vw;
-    height: 100vh;
+   
     overflow: auto;
   }
   .container_mobile.is-open {
-    display: block;
+   display: block;
   }
   .menu-container {
     position: relative;
@@ -31,6 +31,12 @@
     padding-bottom: 48px;
     @media screen and (min-width:480px) {
       width: 480px;
+    }
+    @media screen and (max-width:767px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100vh;
     }
   }
   .mobile-menu-btn, .mobile-menu-btn-close {
@@ -82,9 +88,6 @@
 }
 
 @media screen and (max-width:767px) {
-  .navigation__wrapper {
-    margin-bottom: 302px;
-  }
   .mobile-soc-links {
     display: flex;
   }

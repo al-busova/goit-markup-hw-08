@@ -13,7 +13,7 @@
       margin-bottom: var(--margin-right-item);
     }
   }
-  @media screen and (min-width:768px) {
+  @media screen and (min-width:768px) and (max-width:1199px) {
     flex-basis: calc((100% - 60px) / 3);
     &:not(:nth-child(3n)) {
      margin-right: var(--margin-right-item); 

@@ -23,7 +23,7 @@
   transition: background-color 250ms var(--timing-fun),
   transform 250ms var(--timing-fun);
   @media  screen and  (max-width:479px) {
-    min-width: 320px;
+    width: 94vw;
   }
   @media  screen and  (min-width:480px) {
     width: 450px;
